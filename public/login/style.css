@@ -1,0 +1,36 @@
+body{
+    background-color: lightgray;
+}
+a{
+    color: white;
+}
+.btn{
+        cursor: pointer;
+}
+#loginform{
+    margin-top: 20px;
+}
+#newAcc{
+    text-align: center;
+}
+/*.jumbotron {
+    margin: 200px;
+}*/
+
+.loginbtn {
+    display: block;
+    margin: 0 auto;
+     margin-bottom: 150px;
+}
+label{
+    color: black;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #17A2B8 !important;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+}

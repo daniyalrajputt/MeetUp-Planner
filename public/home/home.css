@@ -1,0 +1,37 @@
+body{
+    background-color: lightgray;
+}
+a{
+    color: white !important;
+}
+.btn{
+       cursor: pointer;
+
+}
+#tableDiv{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.form-control{
+    border-radius: 20px;
+    border: 1px black solid;
+    margin-bottom: 5px; 
+}
+.form-control:focus{
+    background-color: lemonchiffon;
+    border-radius: 20px;
+    border: 2px solid blue;
+    margin-bottom: 10px; 
+}
+#submit{
+    margin-bottom: 50px;
+}
+footer{
+    background-color: #17A2B8 !important;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+}

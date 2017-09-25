@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MeetUp Planner-Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--firebase auth-->
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDIRfz_WiwLy3g0I7QA7fTgE0o96jWo9a8",
+            authDomain: "class-assignments-bbca7.firebaseapp.com",
+            databaseURL: "https://class-assignments-bbca7.firebaseio.com",
+            projectId: "class-assignments-bbca7",
+            storageBucket: "class-assignments-bbca7.appspot.com",
+            messagingSenderId: "896758849665"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-info bg-info fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">MeetUP PLANNER</a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+            &#9776;
+        </button>
+            <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+                <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+                    <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a></li>
+                    <li class="dropdown order-1">
+                        <span style="color: white">Don't have an account?</span>
+                        <button class="btn btn-success my-2 my-sm-0" type="button" onclick="signUp()">Create New <span class="caret"></span></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--sign up form-->
+    <div class="container" style="padding-top:150px">
+        <h1 id="newAcc" class="text-info">login Account</h1>
+        <div class="jumbotron>">
+            <form id="loginform">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <div class="form-group">
+                            <label for="userEmail" class="login">Email address</label>
+                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="example@example.com">
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="form-group">
+                            <label for="userPass" class="login">Password</label>
+                            <input type="password" class="form-control" id="userPass" placeholder="Password">
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <!--<label for="login-btn">Login</label> -->
+                        <button type="submit" id="login-btn" class="btn btn-success btn-lg loginbtn">Login</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class=" text-white mt-4">        
+        <div class="container-fluid py-3 row">
+            <div class="col-md-10">Created By RAO DANIYAL</div>            
+            <div class="col-md-2">
+                <div class="d-inline-block">
+                    <div class="bg-circle-outline d-inline-block">
+                        <a href="https://www.facebook.com/rao.daniyal.39" class="text-white">
+                        <i class="fa fa-2x fa-fw fa-facebook"></i></a>
+                    </div>
+
+                    <div class="bg-circle-outline d-inline-block">
+                        <a href="https://twitter.com/n0tyourbhai" class="text-white">
+                            <i class="fa fa-2x fa-fw fa-twitter"></i></a>
+                    </div>
+
+                    <div class="bg-circle-outline d-inline-block">
+                        <a href="https://www.linkedin.com/in/rao-daniyal-6558b5104/" class="text-white">
+                            <i class="fa fa-2x fa-fw fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+<script src="login.js"></script>
+
+</html>

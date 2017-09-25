@@ -1,0 +1,36 @@
+body{
+    background-color: lightgray;
+}
+
+a{
+    color: white !important;
+}
+.btn {
+     cursor: pointer;
+     font-size: 120%;
+    text-align: center;
+    margin-top: 5px;
+}
+.panel{
+    background-color: white;
+    border: 1px solid black;    
+    margin: 20px;
+}
+        
+#blankSpace {
+     margin-top: 100px;
+     filter: alpha(Opacity=90);
+     opacity: 0.9;
+     border-radius: 15px 15px;
+}
+
+.btn-success {
+    margin: 2px;
+}
+footer{
+    background-color: #17A2B8 !important;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
